@@ -25,36 +25,6 @@
       color: #ff4d4d;
       text-shadow: 0 0 15px #800000;
       font-family: 'Merriweather', serif;
-}
-    nav {
-      text-align: center;
-      margin-top: 10px;
-      animation: fadeIn 1.2s ease;
-    }
-    nav a {
-      color: #d4af37;
-      text-decoration: none;
-      margin: 0 18px;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      position: relative;
-    }
-    nav a::after {
-      content: "";
-      position: absolute;
-      width: 0%;
-      height: 2px;
-      bottom: -5px;
-      left: 0;
-      background: #ff3333;
-      transition: width 0.3s ease;
-    }
-    nav a:hover {
-      color: #ffcc66;
-      text-shadow: 0 0 10px #ff3333;
-    }
-    nav a:hover::after {
-      width: 100%;
     }
     section {
       background: rgba(0, 0, 0, 0.65);
@@ -72,7 +42,6 @@
       text-shadow: 0 0 12px #660000;
       font-family: 'Merriweather', serif;
     }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -94,7 +63,6 @@
       overflow: hidden;
       animation: fadeInUp 1s ease forwards;
     }
-
     .card::before {
       content: "";
       position: absolute;
@@ -119,19 +87,14 @@
       transition: transform 0.3s ease;
     }
     .card:hover img { transform: scale(1.1); }
-
     .card h2 {
       margin: 12px 0 10px;
       color: #ff4d4d;
       border-bottom: 2px solid #ff3333;
       padding-bottom: 6px;
       font-size: 1.2em;
-   
     }
-
     .info { font-size: 0.95em; }
-
-    /* MODAL */
     .modal {
       display: none;
       position: fixed;
@@ -153,7 +116,7 @@
       box-shadow: 0 0 25px #ff0000;
       animation: zoomIn 0.4s ease;
       max-height: 80vh;
-      overflow-y: auto; /* kalau isi panjang bisa di-scroll */
+      overflow-y: auto;
     }
     .modal-content h2 { color: #ff4d4d; }
     .close {
@@ -163,12 +126,10 @@
       color: #ffcc66;
     }
     .close:hover { color: #ff3333; }
-
     @keyframes zoomIn {
       from { transform: scale(0.8); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
     }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -180,17 +141,7 @@
 </head>
 <body>
   <header>Biodata Anggota Kelompok</header>
-
-  <nav>
-    <a href="index.html">Beranda</a>
-    <a href="Deskripsi.html">Deskripsi</a>
-    <a href="lokasi.html">Lokasi</a>
-    <a href="fakta.html">Fakta Unik</a>
-    <a href="Tambahan.html">Tambahan</a>
-    <a href="Biodata Kelompok.html">Biodata Kelompok</a>
-    <a href="quiz.html">Quiz</a>
-  </nav>
-
+  
   <section>
     <h1>Profil Anggota Kelompok</h1>
     <div class="grid">
@@ -240,6 +191,3 @@
   </script>
 </body>
 </html>
-
-
-
