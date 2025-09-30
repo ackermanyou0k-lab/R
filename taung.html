@@ -12,8 +12,6 @@
       padding: 0;
       overflow-x: hidden;
     }
-
-    /* HEADER */
     header {
       background: rgba(0, 0, 0, 0.75);
       padding: 25px 15px;
@@ -26,32 +24,6 @@
       text-shadow: 0 0 8px #660000, 0 0 15px #ff0000;
       animation: fadeInDown 1s ease;
     }
-
-    /* NAVIGATION */
-    nav {
-      background: rgba(0, 0, 0, 0.65);
-      padding: 15px;
-      text-align: center;
-      border-bottom: 2px solid #ff0000;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      animation: fadeIn 1.5s ease;
-    }
-    nav a {
-      color: #d4af37;
-      text-decoration: none;
-      margin: 0 18px;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      position: relative;
-    }
-    nav a:hover {
-      color: #ffcc66;
-      text-shadow: 0 0 8px #ff3333;
-    }
-
-    /* SECTION */
     section {
       background: rgba(0, 0, 0, 0.7);
       margin: 40px auto;
@@ -68,8 +40,6 @@
       text-shadow: 0 0 10px #660000;
       animation: fadeIn 1.5s ease;
     }
-
-    /* TABEL BIODATA */
     .bio-container {
       display: flex;
       flex-wrap: wrap;
@@ -95,8 +65,6 @@
     td b {
       color: #d4af37;
     }
-
-    /* FOOTER */
     footer {
       text-align: center;
       padding: 20px;
@@ -106,8 +74,6 @@
       color: #d4af37;
       animation: fadeInUp 1.5s ease;
     }
-
-    /* ANIMATIONS */
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -120,8 +86,6 @@
       from { opacity: 0; transform: translateY(-30px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    /* RESPONSIVE */
     @media (max-width: 768px) {
       .bio-container { flex-direction: column; align-items: center; }
       table { font-size: 0.9em; }
@@ -130,15 +94,10 @@
 </head>
 <body>
   <header>Ahmad Farrel Syarif Firjatullah</header>
-
-  <nav>
-    <a href="Biodata Kelompok.html">Biodata Kelompok</a>
-  </nav>
-
   <section>
     <h1>Biodata Lengkap</h1>
     <div class="bio-container">
-      <a href="Biodata Kelompok.html"><img src="taung.jpg" alt="Foto Ahmad Farrel Syarif Firjatullah"></a>
+      <a href="index.html"><img src="taung.jpg" alt="Foto Ahmad Farrel Syarif Firjatullah"></a>
       <table>
         <tr><td><b>Nama:</b></td><td>Ahmad Farrel Syarif Firjatullah</td></tr>
         <tr><td><b>TTL:</b></td><td>Banyuwangi, 11 Januari 2008</td></tr>
@@ -182,3 +141,4 @@
   </footer>
 </body>
 </html>
+
